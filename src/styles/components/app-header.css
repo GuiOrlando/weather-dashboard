@@ -1,0 +1,35 @@
+.app-header {
+  margin-bottom: 32px;
+}
+
+.app-label {
+  display: inline-block;
+  margin-bottom: 8px;
+
+  color: var(--color-primary);
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.app-header h1 {
+  max-width: 700px;
+  margin: 0;
+
+  color: var(--color-title);
+
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1.05;
+}
+
+.app-header p {
+  max-width: 650px;
+  margin: 16px 0 0;
+
+  color: var(--color-text-muted);
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+}

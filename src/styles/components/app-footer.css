@@ -1,0 +1,14 @@
+.app-footer {
+  margin-top: 48px;
+
+  color: var(--color-text-light);
+
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.app-footer a {
+  color: var(--color-primary);
+
+  font-weight: 700;
+}
