@@ -7,9 +7,9 @@ import {
     setSearchLoading,
 } from './components/search-form.js';
 
-import {
-    getWeatherByCity,
-} from './services/weather-api.js';
+import { getWeatherByCity } from './services/weather-api.js';
+import { updateCurrentWeather } from './components/current-weather.js';
+import { updateForecastList } from './components/forecast-list.js';
 
 const appElement =
     document.querySelector('#app');
@@ -28,7 +28,9 @@ async function loadWeather(city) {
     setSearchLoading(true);
 
     setFormMessage(
-        'Buscando informações para ' + city + '...',
+        'Buscando informações para ' +
+            city +
+            '...',
     );
 
     try {
@@ -40,10 +42,13 @@ async function loadWeather(city) {
             weather,
         );
 
+        updateCurrentWeather(weather);
+        updateForecastList(weather);
+
         setFormMessage(
             'Dados carregados para ' +
                 weather.location.label +
-                '. Verifique o console.',
+                '.',
             'success',
         );
     } catch (error) {
