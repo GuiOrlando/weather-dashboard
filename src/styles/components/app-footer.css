@@ -1,14 +1,30 @@
 .app-footer {
-  margin-top: 48px;
+  margin-top: 36px;
+  padding-top: 18px;
 
-  color: var(--color-text-light);
+  color: var(--color-text-muted);
 
-  text-align: center;
-  font-size: 0.9rem;
+  border-top:
+    1px solid var(--color-border);
+
+  font-size: 0.8rem;
+  text-align: right;
 }
 
 .app-footer a {
   color: var(--color-primary);
 
   font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.app-footer a:hover {
+  color: var(--color-primary-dark);
+}
+
+@media (max-width: 520px) {
+  .app-footer {
+    text-align: left;
+  }
 }

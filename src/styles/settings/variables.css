@@ -1,69 +1,57 @@
 :root {
+  /* Tipografia */
   --font-family-base:
-    Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Segoe UI",
+    "Helvetica Neue",
+    Arial,
     sans-serif;
 
-  --color-text: #172033;
-  --color-title: #16213a;
-  --color-primary: #3767d6;
-  --color-primary-hover: #2856bd;
-  --color-text-muted: #65708a;
-  --color-text-soft: #75809a;
-  --color-text-light: #778198;
-  --color-placeholder: #9aa4b8;
-  --color-temperature-min: #8993a8;
-  --color-success: #237a45;
-  --color-error: #c0392b;
+  /* Superfícies */
+  --color-page: #f2f1ec;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f7f6f2;
+
+  /* Bordas */
+  --color-border: #d9d8d1;
+  --color-border-strong: #c8c7bf;
+
+  /* Texto */
+  --color-text: #263034;
+  --color-text-soft: #657074;
+  --color-text-muted: #7c8588;
+
+  /* Cores principais */
+  --color-primary: #285e61;
+  --color-primary-dark: #1d484b;
+  --color-primary-soft: #e4efed;
+  --color-accent: #c86f4a;
+
+  /* Estados */
+  --color-success: #28724b;
+  --color-error: #a84138;
   --color-white: #ffffff;
 
-  --background-page: #eef4ff;
+  /* Painel meteorológico */
+  --color-weather-card: #203f42;
+  --color-weather-card-deep: #193538;
+  --color-weather-text-soft: rgba(255, 255, 255, 0.7);
+  --color-weather-border: rgba(255, 255, 255, 0.14);
+  --color-weather-surface: rgba(255, 255, 255, 0.07);
 
-  --background-page-gradient:
-    radial-gradient(
-      circle at top left,
-      #dce8ff,
-      transparent 40%
-    ),
-    linear-gradient(
-      135deg,
-      #f7faff,
-      #e8f0ff
-    );
+  /* Dimensões */
+  --content-width: 1040px;
 
-  --background-surface: rgba(255, 255, 255, 0.9);
-  --background-surface-soft: rgba(255, 255, 255, 0.82);
+  --radius-small: 6px;
+  --radius-medium: 10px;
+  --radius-large: 14px;
 
-  --background-weather-card:
-    linear-gradient(
-      135deg,
-      rgba(31, 76, 173, 0.98),
-      rgba(76, 119, 221, 0.92)
-    );
+  /* Sombras */
+  --shadow-card:
+    0 12px 30px rgba(34, 45, 47, 0.08);
 
-  --background-weather-detail:
-    rgba(255, 255, 255, 0.12);
+  --shadow-focus:
+    0 0 0 4px rgba(40, 94, 97, 0.14);
 
-  --border-surface:
-    1px solid rgba(155, 172, 209, 0.35);
-
-  --border-surface-soft:
-    1px solid rgba(155, 172, 209, 0.25);
-
-  --border-weather-detail:
-    1px solid rgba(255, 255, 255, 0.14);
-
-  --shadow-search:
-    0 18px 50px rgba(49, 78, 133, 0.1);
-
-  --shadow-weather:
-    0 24px 60px rgba(36, 75, 159, 0.25);
-
-  --shadow-forecast:
-    0 16px 35px rgba(56, 80, 126, 0.08);
-
-  --radius-small: 12px;
-  --radius-medium: 16px;
-  --radius-large: 18px;
-  --radius-card: 20px;
-  --radius-weather: 28px;
+  /* Transições */
+  --transition-fast: 160ms ease;
 }

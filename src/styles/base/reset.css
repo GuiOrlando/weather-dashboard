@@ -1,8 +1,18 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-body {
+html {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body,
+h1,
+h2,
+p {
   margin: 0;
 }
 
@@ -12,9 +22,15 @@ input {
 }
 
 button {
-  cursor: pointer;
+  border: 0;
 }
 
 a {
   color: inherit;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
 }

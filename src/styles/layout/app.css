@@ -1,18 +1,27 @@
 .app-container {
-  width: min(1100px, calc(100% - 32px));
+  width: min(
+    var(--content-width),
+    calc(100% - 48px)
+  );
+
   margin: 0 auto;
-  padding: 64px 0 32px;
+  padding: 56px 0 28px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 760px) {
   .app-container {
-    padding-top: 40px;
+    width: min(
+      var(--content-width),
+      calc(100% - 32px)
+    );
+
+    padding-top: 36px;
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 480px) {
   .app-container {
-    width: min(100% - 20px, 1100px);
-    padding-top: 28px;
+    width: calc(100% - 24px);
+    padding-top: 24px;
   }
 }

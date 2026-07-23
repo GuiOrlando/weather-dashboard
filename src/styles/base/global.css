@@ -1,15 +1,28 @@
 :root {
-  font-family: var(--font-family-base);
   color: var(--color-text);
-  background: var(--background-page);
+  background: var(--color-page);
 
+  font-family: var(--font-family-base);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
   min-width: 320px;
   min-height: 100vh;
 
-  background: var(--background-page-gradient);
+  background: var(--color-page);
+}
+
+::selection {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
 }
